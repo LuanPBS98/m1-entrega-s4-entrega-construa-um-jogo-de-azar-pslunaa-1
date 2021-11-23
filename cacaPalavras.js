@@ -50,20 +50,20 @@ let tabua=document.createElement('p')
     aside.appendChild(tabua)
 } 
 
-
 //Randomizar de palavras
-function randomizerWord(){
+function palavrasRandomicas(){
+let tabelaSelecionada = []
+for (let i = 0;i < 3;i++){
+let palavra=palavrasChaves[Math.floor(Math.random() * palavrasChaves.length)] 
 
-let randomLetter = []
-
-    for(let i = 0;i < 3;i++){
-        randomLetter.push(palavrasChaves[(Math.floor(Math.random() * palavrasChaves.length))]) 
+    if(tabelaSelecionada.includes(palavra) === false){
+        tabelaSelecionada.push(palavra)
     }
-    return randomLetter
+    else{
+        let palavra=palavrasChaves[Math.floor(Math.random() * palavrasChaves.length)]
+            tabelaSelecionada.push(palavra)
+       }
+    }
+    return tabelaSelecionada
 }
-showTable(randomizerWord().toString())
-
-
-
-
-
+showTable(palavrasRandomicas().toString())
