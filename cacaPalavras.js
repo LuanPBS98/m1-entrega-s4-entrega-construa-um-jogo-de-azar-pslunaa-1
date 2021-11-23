@@ -61,7 +61,7 @@ let randomLetter = []
     }
     return randomLetter
 }
-showTable(randomizerWord())
+showTable(randomizerWord().toString())
 
 
 

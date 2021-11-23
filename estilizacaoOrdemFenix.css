@@ -1,3 +1,4 @@
+@import url('http://fonts.cdnfonts.com/css/harry-potter');
 
 .celula{
     width: 50px;
@@ -7,5 +8,10 @@
 }
 .tabelaDePalavras{
     display: flex;
-    justify-content: center;
+    justify-content: center;                                                   
+}
+.tabelaDePalavras p{
+    font-family: 'Harry Potter', sans-serif;
+    font-size: 35px;
+    color: #e1b43d;
 }
