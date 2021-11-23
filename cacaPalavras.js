@@ -33,17 +33,37 @@ function criandoTabuleiro(){
 }
 criandoTabuleiro();
 
-/* Dev_Luan*/
+/* Dev_Luan */
 
+//dicionário de palavras
 const palavrasChaves = ["HARRY", "HERMIONE", "ARTHUR", "JORGE", "FRED", "RONY", "SNAPE", "SIRIUS", "REMO", 
 "ALASTOR", "FLEUR", "MOLLY", "ALVO", "ELIAS", "MINERVA", "RÚBEO", "DÉDALO", "GUI", "MUNDUNGO", "THIAGO"]
 
+
+//tabela com as palavras selecionadas
+function showTable(n){
+let aside=document.createElement('aside')
+let tabua=document.createElement('p')
+    aside.classList.add('tabelaDePalavras')
+    tabua.textContent = JSON.stringify(n)
+    document.body.appendChild(aside)
+    aside.appendChild(tabua)
+} 
+
+
+//Randomizar de palavras
 function randomizerWord(){
+
 let randomLetter = []
+
     for(let i = 0;i < 3;i++){
         randomLetter.push(palavrasChaves[(Math.floor(Math.random() * palavrasChaves.length))]) 
     }
     return randomLetter
 }
-console.log(randomizerWord())
+showTable(randomizerWord())
+
+
+
+
 

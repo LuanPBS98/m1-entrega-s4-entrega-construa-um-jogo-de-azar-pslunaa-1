@@ -5,3 +5,7 @@
     border: black 1px solid;
     text-align: center;
 }
+.tabelaDePalavras{
+    display: flex;
+    justify-content: center;
+}
