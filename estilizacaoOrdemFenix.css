@@ -8,6 +8,7 @@ body{
     border: black 1px solid;
     text-align: center;
     background-color: #e1b43d;
+    font-weight: 700;
 }
 table{
     display: flex;
