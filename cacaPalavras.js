@@ -40,16 +40,24 @@ let palavrasEscondidas = palavrasRandomicas();
 function adicionarPalavras (str){
 let linhaRandomica = Math.floor(Math.random() * 10);
 let colunaRandomica = Math.floor(Math.random() * 10);
-       
-if((10 - colunaRandomica) > str.length){
-   let m = 0;
-   let limitador = str.length+colunaRandomica
 
-   for(let i = colunaRandomica; i <= limitador; i++){
-               tabelaLetras[linhaRandomica][i] = str.charAt(m);
-               m++
-       }
-   }
+do{
+    colunaRandomica = Math.floor(Math.random() * 10); 
+
+}while((!((10 - colunaRandomica) >= str.length)))
+
+do{
+    linhaRandomica = Math.floor(Math.random() * 10);
+
+}while(tabelaLetras[linhaRandomica].find(element => element !== "") !== undefined)
+
+let m = 0;
+let limitador = str.length+colunaRandomica
+
+for(let i = colunaRandomica; i < limitador; i++){
+            tabelaLetras[linhaRandomica][i] = str.charAt(m);
+            m++
+}
 }
 
 
@@ -93,6 +101,14 @@ let tabua=document.createElement('p')
 } 
 
 showTable(palavrasEscondidas.toString())
+
+for(let x = 0; x < 10; x++){
+    for(let y = 0; y < 10; y++){
+        if(tabelaLetras[x][y] === ""){
+            tabelaLetras[x][y] = alfabeto[letraRandomica()]
+        }
+    }
+}
 
 
 criandoTabuleiro();
