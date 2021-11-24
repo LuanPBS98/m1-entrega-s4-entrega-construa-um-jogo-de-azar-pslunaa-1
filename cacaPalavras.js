@@ -32,33 +32,36 @@ for(let k = 0; k < 10; k++){
     }
 }
 
+
+
 // Preenchimento das palavras
-function adicionarPalavras (){
 let palavrasEscondidas = palavrasRandomicas();
+
+function adicionarPalavras (str){
 let linhaRandomica = Math.floor(Math.random() * 10);
 let colunaRandomica = Math.floor(Math.random() * 10);
         
-if((10 - colunaRandomica) > palavrasEscondidas[0].length){
+if((10 - colunaRandomica) > str.length){
     let m = 0;
-    let limitador = palavrasEscondidas[0].length+colunaRandomica
+    let limitador = str.length+colunaRandomica
 
     for(let i = colunaRandomica; i <= limitador; i++){
-                tabelaLetras[linhaRandomica][i] = palavrasEscondidas[0].charAt(m);
+                tabelaLetras[linhaRandomica][i] = str.charAt(m);
                 m++
     
-                console.log(tabelaLetras[linhaRandomica][i]);
-                console.log(colunaRandomica+"Coluna");
-                console.log(palavrasEscondidas+"Palavras");
+                // console.log(tabelaLetras[linhaRandomica][i]);
+                // console.log(colunaRandomica+"Coluna");
+                // console.log(palavrasEscondidas+"Palavras");
         }
     
     }
 }
 
-adicionarPalavras();  
 
-
-    
-
+for(let a = 0; a < palavrasEscondidas.length; a++){
+        adicionarPalavras(palavrasEscondidas[a]);
+}
+  
 
 const containerTabuleiro = document.getElementsByTagName("main")[0];
 const tabela = document.createElement("table");
@@ -98,9 +101,7 @@ let tabua=document.createElement('p')
 } 
 
 
-
-// showTable(palavrasRandomicas().toString())
-
+showTable(palavrasEscondidas.toString())
 
 
 criandoTabuleiro();
