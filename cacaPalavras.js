@@ -1,5 +1,5 @@
 const alfabeto = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O",
- "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+ "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 
 // Função para preencher com letras aleatórias
 function letraRandomica() {
@@ -9,7 +9,7 @@ function letraRandomica() {
 const palavrasChaves = ["HARRY", "HERMIONE", "ARTHUR", "JORGE", "FRED", "RONY", "SNAPE", "SIRIUS", "REMO", 
 "ALASTOR", "FLEUR", "MOLLY", "ALVO", "ELIAS", "MINERVA", "RÚBEO", "DÉDALO", "GUI", "MUNDUNGO", "THIAGO"]
 
-//Randomizar de palavras
+// Selecionar palavras randomicamente
 function palavrasRandomicas(){
 let tabelaSelecionada = [];
 for (let i = 0; tabelaSelecionada.length < 3; i++){
@@ -33,8 +33,7 @@ for(let k = 0; k < 10; k++){
 }
 
 
-
-// Preenchimento das palavras
+// Preenchimento das palavras no tabuleiro
 let palavrasEscondidas = palavrasRandomicas();
 
 function adicionarPalavras (str){
@@ -48,12 +47,7 @@ if((10 - colunaRandomica) > str.length){
     for(let i = colunaRandomica; i <= limitador; i++){
                 tabelaLetras[linhaRandomica][i] = str.charAt(m);
                 m++
-    
-                // console.log(tabelaLetras[linhaRandomica][i]);
-                // console.log(colunaRandomica+"Coluna");
-                // console.log(palavrasEscondidas+"Palavras");
         }
-    
     }
 }
 
@@ -62,13 +56,12 @@ for(let a = 0; a < palavrasEscondidas.length; a++){
         adicionarPalavras(palavrasEscondidas[a]);
 }
   
-
+// Criação do tabuleiro 
 const containerTabuleiro = document.getElementsByTagName("main")[0];
 const tabela = document.createElement("table");
 containerTabuleiro.appendChild(tabela);
 
 function criandoTabuleiro(){
-
    for (let i = 0; i < 10; i++){
        let linha = document.createElement("tr");
        linha.setAttribute("linha", i);
@@ -81,15 +74,13 @@ function criandoTabuleiro(){
         }
         tabela.appendChild(linha);
    }
-   
 }
-
 
 /* Dev_Luan */
 
 //dicionário de palavras
 
-//tabela com as palavras selecionadas
+//Lista de palavras presentes no tabuleiro;
 
 function showTable(n){
 let aside=document.createElement('aside')
@@ -99,7 +90,6 @@ let tabua=document.createElement('p')
     document.body.appendChild(aside)
     aside.appendChild(tabua)
 } 
-
 
 showTable(palavrasEscondidas.toString())
 
