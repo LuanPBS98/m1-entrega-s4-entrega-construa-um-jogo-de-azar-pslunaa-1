@@ -6,8 +6,11 @@ function letraRandomica() {
     return Math.floor(Math.random() * 26);
 }
 
+//arrays
 const palavrasChaves = ["HARRY", "HERMIONE", "ARTHUR", "JORGE", "FRED", "RONY", "SNAPE", "SIRIUS", "REMO", 
 "ALASTOR", "FLEUR", "MOLLY", "ALVO", "ELIAS", "MINERVA", "RÚBEO", "DÉDALO", "GUI", "MUNDUNGO", "THIAGO"]
+const numeroLinhas=[0,1,2,3,4,5,6,7,8,9]
+const numeroColuna=[0,1,2,3,4,5,6,7,8,9]
 
 //Randomizar de palavras
 function palavrasRandomicas(){
@@ -20,11 +23,36 @@ let palavra = palavrasChaves[Math.floor(Math.random() * palavrasChaves.length)]
     }
     return tabelaSelecionada
 }
-
 let finalWord = palavrasRandomicas()
-let word1 = finalWord[0]
-let word2 = finalWord[1]
-let word3 = finalWord[2]
+console.log(palavrasRandomicas())
+
+//Randomizar linhas
+function linhasRandomizadas(){
+let linha = [];
+
+    for (let i = 0;linha.length < 3; i++){
+    let linhaRandomica = numeroLinhas[Math.floor(Math.random() * numeroLinhas.length)] 
+        if(linha.includes(linhaRandomica) === false){
+            linha.push(linhaRandomica)
+        } 
+    }
+    return linha
+}
+console.log(linhasRandomizadas())
+
+//Randomizar colunas
+function colunasRandomizadas(){
+let coluna = [];
+    
+    for (let i = 0;coluna.length < 3; i++){
+    let colunaRandomica = numeroColuna[Math.floor(Math.random() * numeroColuna.length)] 
+        if(coluna.includes(colunaRandomica) === false){
+            coluna.push(colunaRandomica)
+        } 
+    }
+    return coluna
+}
+console.log(colunasRandomizadas())
 
 // Criação da tabela
 let tabelaLetras = [];
@@ -38,22 +66,29 @@ for(let k = 0; k < 10; k++){
 
 // Preenchimento das palavras
 
-
-    
+  
 function adicionarPalavras (){
 let palavrasEscondidas = palavrasRandomicas();
-let linhaRandomica = Math.floor(Math.random() * 10);
-let colunaRandomica = Math.floor(Math.random() * (6 - palavrasEscondidas.length));
-let m = 0;
-let limitador = palavrasEscondidas[0].length+colunaRandomica
-
-    for(let i = 0; i <= limitador; i++){
-            tabelaLetras[linhaRandomica][i] = palavrasEscondidas[0].charAt(m);
-            m++
+let linhaRandomica = linhasRandomizadas()
+let colunaRandomica = colunasRandomizadas()
+let colunaRestrita = colunaRandomica[0]
+console.log(colunaRestrita)
+            
+if((10 - colunaRandomica) > palavrasEscondidas[0].length){
+    let m = 0;
+    let limitador = palavrasEscondidas[0].length+colunaRandomica
+    
+    for(let i = colunaRandomica; i <= limitador; i++){
+        tabelaLetras[linhaRandomica[0]][i] = palavrasEscondidas[0].charAt(m);
+        m++
+                    console.log(tabelaLetras[linhaRandomica][i]);
+                    console.log(colunaRandomica+"Coluna");
+                    console.log(palavrasEscondidas+"Palavras");
             }
-}
-
-adicionarPalavras()
+        }
+    }
+    
+    adicionarPalavras();  
 
 
 const containerTabuleiro = document.getElementsByTagName("main")[0];
