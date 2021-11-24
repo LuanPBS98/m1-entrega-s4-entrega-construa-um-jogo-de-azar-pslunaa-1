@@ -41,17 +41,33 @@ let palavrasEscondidas = palavrasRandomicas();
 let linhaRandomica = Math.floor(Math.random() * 10);
 let colunaRandomica = Math.floor(Math.random() * 10);
 
-if(10 - colunaRandomica > palavrasEscondidas[0].length){
-    let l = 0
-    for(let i = colunaRandomica; i < i+palavrasEscondidas[0].length; i++){
-        tabelaLetras[linhaRandomica][colunaRandomica] = palavrasEscondidas[0].charAt(l);
-        l++
-    }
+let m = 0
+for(let i = colunaRandomica; i < palavrasEscondidas[0].length; i++){
+        tabelaLetras[linhaRandomica][i] = palavrasEscondidas[0].charAt(m);
+        m++
 }
 
 
 const containerTabuleiro = document.getElementsByTagName("main")[0];
 const tabela = document.createElement("table");
+const pergaminho = document.createElement("div")
+pergaminho.classList.add("palavrasPerdidas")
+const imagem = document.createElement("img")
+imagem.setAttribute('src', "/assets/pngegg (1).png");
+const p1 = document.createElement("p")
+p1.id = "p1"
+const p2 = document.createElement("p")
+p2.id = "p2"
+const p3 = document.createElement("p")
+p3.id = "p3"
+p1.innerText = palavrasRandomicas()[0]
+p2.innerText = palavrasRandomicas()[1]
+p3.innerText = palavrasRandomicas()[2]
+pergaminho.appendChild(p1)
+pergaminho.appendChild(p2)
+pergaminho.appendChild(p3)
+pergaminho.appendChild(imagem)
+containerTabuleiro.appendChild(pergaminho)
 containerTabuleiro.appendChild(tabela);
 
 function criandoTabuleiro(){
@@ -94,6 +110,6 @@ showTable(palavrasRandomicas().toString())
 
 
 criandoTabuleiro();
-adicionarPalavras();
+//adicionarPalavras();
 
 
