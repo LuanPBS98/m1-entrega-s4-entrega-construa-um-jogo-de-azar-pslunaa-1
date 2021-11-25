@@ -1,0 +1,30 @@
+.temporizador {
+    background-color: rgb(255, 0, 140);
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    border-radius: 10px;
+    height: 100px;
+}
+.espaçoTempo{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+}
+.espaçoTempo p{
+    width: 43px;
+    font-size: 20px;
+    font-weight: 900;
+}
+.buttonTime {
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+.buttonTime button{
+    border-radius: 5px;
+    background-color: orange;
+    border: none;
+    cursor: pointer;
+}
