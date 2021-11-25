@@ -115,7 +115,7 @@ function start(){
 const popUp = document.querySelector("#backPopupJ")
 function temporizador(){
    seg++
-     if(seg === 5){
+     if(seg === 30){
        min++
        seg=0
       
