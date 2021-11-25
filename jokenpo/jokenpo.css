@@ -20,7 +20,7 @@ header img {
 
 .escolha{
     color: #fff;
-    margin-top: 60px;
+    margin-top: 40px;
     background-color: rgb(73, 38, 73);
     width: 909px;
     text-align: center;
@@ -44,7 +44,6 @@ header img {
 .placarAparecer {
     animation: opacidade 3s;
     color: #fff;
-    height: 50px;
     display: flex;
     margin-right: 40px;
     margin-left: 35px;
@@ -148,8 +147,7 @@ header img {
     flex-direction: column;
     background-color: rgb(77, 31, 119);
     width: 600px;
-    height: 70px;
-    margin-top: 75px;
+    margin-top: 40px;
     margin-left: 177px;
     justify-content: center;
     color: #fff;
