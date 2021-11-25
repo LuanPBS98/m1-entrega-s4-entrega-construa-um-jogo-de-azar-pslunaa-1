@@ -81,6 +81,7 @@ div{
     header img{
         width: 350px;  
         margin-bottom: -65px; 
+        margin-top: -65px;
     }
     div{
         flex-direction: row;
