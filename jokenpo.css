@@ -200,3 +200,52 @@ header img {
     }
     
 }
+
+/*  */
+.alert-boxJ{
+    display:block;
+    position:fixed;
+    width:300px;
+    height: 180px;
+    padding:5px 20px 20px;
+    background-color: #999;
+    background-position: center;
+    border:1px solid #999;
+    text-align:center;
+    transform:translate(-50%,-50%);
+    top:50%;
+    left:50%;
+    z-index:99999;
+    -webkit-box-shadow: 0px 0px 33px -6px rgba(0,0,0,0.59);
+    -moz-box-shadow: 0px 0px 33px -6px rgba(0,0,0,0.59);
+    box-shadow: 0px 0px 33px -6px rgba(0,0,0,0.59);
+ }
+ #backPopupJ{
+    display: none;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+ }
+ .alert-boxJ{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+ }
+ .alert-boxJ h1{
+    font-size: 35px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.alert-boxJ p{
+    font-size: 15px;
+}
+ .alert-boxJ input{
+    border: none;
+    background-color: rgba(255, 255, 255, 0.445);
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    cursor: pointer;
+    padding: 10px;
+ }
+ .alert-boxJ input:hover{
+    background-color: aquamarine;
+ }
