@@ -1,9 +1,4 @@
 @import url('http://fonts.cdnfonts.com/css/harry-potter');
-/*PALETA DE CORES
-
-celula = rgb(89, 156, 201)
-
-*/
 header{
     width: 100vw;
     display: flex;
@@ -23,8 +18,11 @@ body{
     align-items: center;
     background-color: black;
 }
+main {
+    margin-top: 70px;
+}
 .wordSearch{
-    background-image: url("assets/background/mobile_background.jpg");
+    background-image: url("assets/background/mobile_backgroundgif.gif");
     background-repeat: no-repeat;
     background-attachment: local;
     display: flex;
@@ -48,7 +46,6 @@ table{
     color: black;
     font-weight: 700;
     border-radius: 5px;
-    
 }
 aside{
     margin-top: 20px;
@@ -67,13 +64,29 @@ summary{
     width: 200px;
     margin-top: 20px;
     cursor: pointer;
+    color: black;
+    background-color: rgb(89, 156, 201);
+    border-radius: 10px;
+    padding-left: 10px;
+    font-weight: 900;
 }
 .options span{
-    
     color: white;
     font-size: 14px;
-    background-color: black;
+    background-color: black;   
 }
+footer {
+    position: absolute;   
+}
+/**/
+.nomesBruxos{
+    background-color: rgb(0, 255, 13);
+}
+td:hover{
+    cursor: pointer;
+    background-color: brown;
+}
+/**/
 @media screen and (min-width: 768px){
     
     .harryLogo{
@@ -88,27 +101,27 @@ summary{
         align-items: flex-start;
     }
     main{
-        margin-top: 20px;
+        margin-top: 70px;
     }
     summary{
         color: black;
         font-weight: 900;
         margin-top: 0px;
         margin-bottom: 10px;
+        background-color: transparent;
     }
     aside{
         background-color: rgba(89, 156, 201, 0.678);
         padding: 10px;
         border-radius: 20px;
         width: 30vw;
-        margin-top: 20px;
+        margin-top:70px;
         margin-right: 10px;
     }
     .options span{
         background-color: transparent;
         color: black;
         font-weight: 600; 
-         
     }
     .options {
          margin-bottom: 20px; 
