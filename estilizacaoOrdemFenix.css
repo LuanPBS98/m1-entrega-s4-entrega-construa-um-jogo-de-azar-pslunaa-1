@@ -75,7 +75,7 @@ summary{
     color: white;
     font-size: 18px;
     font-style: oblique;
-    background-color: black; 
+    background-color: black;   
 }
 footer {
     position: absolute;   
@@ -167,7 +167,7 @@ td:hover{
         background-color: transparent;
     }
     aside{
-        background-color: rgba(89, 156, 201, 0.678);
+        background-color: rgba(89, 156, 201, 0.849);
         padding: 10px;
         border-radius: 20px;
         max-width: 30vw;
@@ -183,7 +183,7 @@ td:hover{
          display: flex;
          text-align: justify;
     }
-    .menos {
+    #menos {
         margin-bottom: 0px;
     }
 }
