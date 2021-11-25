@@ -6,22 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css"/>
     <link  rel="stylesheet" href="jokenpo.css"/>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <title>Jokenpo</title>
 </head>
 <body>
-    <main>
+    <section class="pedraPapel">
         <header>
-            <img src="assets/Img - Jokenpo/AAAABZnu-_NSL2ppzY67qQFjPymHsv0r8x__5CvO6F_cKFs5uEx4mH0G1YxugceClCE0knA8Ty1ggF9nT27nTodxHhGmraXGOqT0A82g-removebg-preview.png" alt="logo"/>
+            <figure>
+                <img class="logohh"src="assets/Img - Jokenpo/AAAABZnu-_NSL2ppzY67qQFjPymHsv0r8x__5CvO6F_cKFs5uEx4mH0G1YxugceClCE0knA8Ty1ggF9nT27nTodxHhGmraXGOqT0A82g-removebg-preview.png" alt="logo"/>
+            </figure>
             <div class="esconder1">
                 <h3 class="esconder"></h3>
                 <h3 class="esconder">Computador:<span id="computador"></span> </h3>
             </div>
             
             <div class = "esconderTempo">
-                <p id ='tempo'></p>
-            </div>
-
+                <p id ='tempo'>
+                    <i class="far fa-clock"></i>
+                </p>
+            </div>       
         </header>
+
         <div class="container-1">
             <div class="nome-jogador">
             <label for="nome">Nome do Jogador</label>
@@ -41,12 +46,11 @@
                     <li>Papel vende pedra</li>
                     <li>Tesoura vence papel</li>
                 </ul>
-
             </details>
             </div>
         </div>
-        
 
+        <main>  
         <div class="esconder">
             <h2 class="escolha">Faça sua escolha:</h2>
             <div id='botoes'>
@@ -68,18 +72,16 @@
                 <h3 class="player1">O COMPUTADOR ESCOLHEU: <span class="player1"></span></h3>
                 <h3>RESULTADO: <span class="player2"></span></h3>
             </div>
-
         </div>
-
-        <div id="backPopupJ">
-            <div class="alert-boxJ">
-                <h1>RESULTADO</h1>
-                <p class="resultado"> </p>
-                <input type="button" value="JOGAR NOVAMENTE" onclick="fecharPopupJ()"/>
+            <div id="backPopupJ">
+                <div class="alert-boxJ">
+                    <h1>RESULTADO</h1>
+                    <p class="resultado"> </p>
+                    <input type="button" value="JOGAR NOVAMENTE" onclick="fecharPopupJ()"/>
+                </div>
             </div>
-        </div>
-
-    </main>
+        </main>  
+    </section>
     <script src="jokenpo.js"></script>
 </body>
 </html>

@@ -10,7 +10,10 @@ img{
 figure{
     display: flex;
     justify-content: center;
+<<<<<<< HEAD
    
+=======
+>>>>>>> 526b703eeb9b11eefbd4f142b71ce1306a8e1398
 }
 body{
     display: flex;

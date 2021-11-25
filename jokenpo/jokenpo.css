@@ -1,63 +1,73 @@
 body{
-    background-image: url("assets/Img - Jokenpo/224-2245659_hunter-x-hunter-wallpaper-4k.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat, repeat;
-}
-
-header {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:  #ff8202;
 }
-
-header h3{
-    color: #fff;
+figure{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
 }
-
-header img {
-    width: 25%;
-    margin-left: 10px;
-    margin-top: 10px;
+.logohh{
+    width: 300px;
+    margin-bottom: 0;
 }
-
-.escolha{
-    color: #fff;
-    margin-top: 40px;
-    background-color: rgb(73, 38, 73);
-    width: 909px;
-    text-align: center;
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
 }
-
-.placarJ{
-    margin-right: 100px;
+.pedraPapel{
+    background-image: url("assets/background/newmobile.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
 }
-
 .placar {
     display: flex;
-    background-color: rgb(77, 31, 119);
-    width: 400px;
-    height: 50px;
-    margin-top: 75px;
-    margin-left: 150px;
-    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    height: auto;
+    background-color: #bb890e;
+    border-radius: 10px;
+    margin-top: 15px;
 }
-
+.escolha{
+    color: #fff;
+    margin-top: 60px;
+    background-color: rgb(42, 92, 55);
+    width: 40%;
+    text-align: center;
+    border-radius: 10%;
+}
+.aparecer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: opacidade 3s;
+}
 
 .placarAparecer {
     animation: opacidade 3s;
     color: #fff;
-    display: flex;
+    height: 50px;
     margin-right: 40px;
     margin-left: 35px;
     align-items: center;
     font-size: 22px;
 }
-
-.placar h3 {
-    width: 100px;
-    margin-left: 0;
-}
-
 .timer{
-    background-color: rgb(77, 31, 119);
+    background-color: #bb890e;
     margin-top: 75px;
     color: #fff;
     font-size: 22px;
@@ -67,9 +77,9 @@ header img {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
-
-
 .cardEscolha {
     width: 293px;
     display: flex;
@@ -78,15 +88,11 @@ header img {
     border: solid 1px;
     background-color: black;
     border-radius: 5px;
+    margin-top: 10px;
 }
-
-.aparecer{
-    margin-left: 180px;
-    animation: opacidade 3s;
-}
-
 #botoes {
     display: flex;
+    flex-direction: column;
 }
 
 #botoes button{
@@ -97,30 +103,16 @@ header img {
 }
 
 #botoes button:hover {
-    background-color: green;
+    background-color: #bb890e;
     color: #fff;
-    font-weight: 800;
 }
 
 .esconder {
     display: none;
 }
-.container-1{
-    display: flex;
-    flex-direction: row;
-}
-.nome-jogador label{
-    text-transform: uppercase;
-    font-size: 25px;
-    font-weight: 700;
-    background-color: rgb(73, 38, 73);
-    margin-bottom: 15px;
-}
-
 .nome-jogador{
     width: 293px;
     height: 180px;
-    margin-left: 50px;
     margin-top: 50px;
     color: #fff;
     display: flex;
@@ -128,22 +120,24 @@ header img {
     justify-content: center;
     align-items: center;
     box-shadow: -1px 11px 5px 31px rgba(0,0,0,0.75);
--webkit-box-shadow: -1px 11px 5px 31px rgba(0,0,0,0.75);
--moz-box-shadow: -1px 11px 5px 31px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 11px 5px 31px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 11px 5px 31px rgba(0,0,0,0.75);
+    margin-bottom: 50px;
 }
 
 .nome-jogador input[type="text"]{
     padding: 10px 30px;
     border-radius: 10px;
     border: none;
+    width: 70%;
 }
 
 .nome-jogador label{
-    text-transform: uppercase;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 700;
-    background-color: rgb(73, 38, 73);
-    margin-bottom: 15px;
+    background-color: #ff8202;
+    margin: 0 4px 15px;
+    padding: 1px;
 }
 
 .start{
@@ -152,59 +146,22 @@ header img {
     border-radius: 10px;
 }
 
-.informacoes{
-    width: 293px;
-    height: 180px;
-    margin-left: 70px;
-    margin-top: 50px;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    box-shadow: -1px 11px 5px 31px rgba(0,0,0,0.75);
--webkit-box-shadow: -1px 11px 5px 31px rgba(0,0,0,0.75);
--moz-box-shadow: -1px 11px 5px 31px rgba(0,0,0,0.75);
-}
-.informacoes summary{
-    text-transform: uppercase;
-    font-size: 20px;
-    font-weight: 700;
-    background-color: rgb(73, 38, 73);
-    margin: 0 4px;
-}
-.informacoes p{
-    font-size: 13px;
-    font-weight: 700;
-    background-color: rgb(73, 38, 73);
-    margin: 0 4px 15px;
-    padding: 1px;
-}
-.informacoes ul{
-    font-size: 13px;
-    font-weight: 700;
-    background-color: rgb(73, 38, 73);
-    margin: -15px 4px 0px;
-    padding: 1px;
-}
+
+
 .player{
     display: flex;
     flex-direction: column;
-    background-color: rgb(77, 31, 119);
-    width: 600px;
-    margin-top: 40px;
-    margin-left: 177px;
+    width: 300px;
+    margin: 40px 0px 0px 0px;
     justify-content: center;
     color: #fff;
-}
-.player1{
-    margin-bottom: 20px;
+    padding-left: 15px;
+    background-color: #bb890e;
 }
 
 #game2{
     display: none;
 }
-
 
 @keyframes opacidade {
     from {
@@ -243,7 +200,6 @@ header img {
     
 }
 
-/*  */
 .alert-boxJ{
     display:block;
     position:fixed;
@@ -291,3 +247,206 @@ header img {
  .alert-boxJ input:hover{
     background-color: aquamarine;
  }
+ .container-1{
+    display: flex;
+    flex-direction: column;
+    
+}
+.informacoes{
+    width: 293px;
+    height: 180px;
+    margin-top: 50px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-shadow: -1px 11px 5px 31px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 11px 5px 31px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 11px 5px 31px rgba(0,0,0,0.75);
+}
+.informacoes summary{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #ff8202;
+    margin: 0 4px;
+}
+.informacoes p{
+    font-size: 13px;
+    font-weight: 700;
+    background-color: #ff8202;
+    margin: 0 4px 15px;
+    padding: 1px;
+}
+.informacoes ul{
+    font-size: 13px;
+    font-weight: 700;
+    background-color: #ff8202;
+    margin: -15px 4px 0px;
+    padding: 1px;
+    list-style: none;
+}
+ @media screen and (min-width: 768px){
+    body{
+        background-color: #655677;
+        
+    }
+    header{
+        display: flex;
+        width: 70%;
+    }
+    .pedraPapel{
+        background-image: url("assets/background/224-2245659_hunter-x-hunter-wallpaper-4k.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100vw;
+        height: 100%;
+    }
+    .nome-jogador{
+        width: 293px;
+        height: 180px;
+        margin-left: 50px;
+        margin-top: 50px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: -1px 11px 5px 31px rgb(0 0 0 / 75%);
+        -webkit-box-shadow: -1px 11px 5px 31px rgb(0 0 0 / 75%);
+        -moz-box-shadow: -1px 11px 5px 31px rgba(0,0,0,0.75);
+    }
+    .nome-jogador label{
+        text-transform: uppercase;
+        font-size: 25px;
+        font-weight: 700;
+        background-color:   #1b0f19;
+        color: #b6c3fa;
+        margin-bottom: 15px;
+    }
+    .nome-jogador input{
+        padding: 10px 30px;
+        border-radius: 10px;
+        border: none;
+    }
+    .nome-jogador input:hover{
+        background-color:   #1b0f19;
+        color: #b6c3fa;
+    }
+    .start{
+        margin-top: 20px;
+        padding: 10px 30px;
+        border-radius: 10px;
+    }
+    .placar{
+        display: flex;
+        background-color:   #1b0f19;
+        color: #b6c3fa;
+        width: 400px;
+        height: 50px;
+        margin-top: 75px;
+        margin-left: 15px;
+        justify-content: center;
+        border-radius: 0px;
+    }
+    .timer{
+        background-color:   #1b0f19;
+        color: #b6c3fa;
+        margin-top: 75px;
+        font-size: 22px;
+        font-weight: bold;
+        height: 50px;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .placar h3{
+        display: flex;
+        margin: 0 auto;
+    }
+    #tempo {
+        margin: 0px;
+    }
+    .aparecer h2{
+        border-radius: 0px;
+        background-color:   #1b0f19;
+        color: #b6c3fa;
+        margin: 40px 14px 0px 0px;
+    }
+    .aparecer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .escolha{
+        width: 900px;
+    }
+    #botoes{
+        display: flex;
+        flex-direction: row;
+    }
+    .player{
+        display: flex;
+        flex-direction: column;
+        background-color:   #1b0f19;
+        color: #b6c3fa;
+        width: 600px;
+        margin: 40px 0px 0px 0px;
+        justify-content: center;
+        padding-left: 15px;
+    }
+    .container-1{
+        display: flex;
+        flex-direction: row;
+    }
+    .informacoes{
+        width: 293px;
+        height: 180px;
+        margin-left: 70px;
+        margin-top: 50px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        box-shadow: -1px 11px 5px 31px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 11px 5px 31px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 11px 5px 31px rgba(0,0,0,0.75);
+    }
+    .informacoes summary{
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 700;
+        background-color:   #1b0f19;
+        color: #b6c3fa;
+        margin: 0 4px;
+    }
+    .informacoes p{
+        font-size: 13px;
+        font-weight: 700;
+        background-color: rgb(73, 38, 73);
+        margin: 0 4px 15px;
+        padding: 1px;
+        text-align: justify;
+    }
+    .informacoes ul{
+        font-size: 13px;
+        font-weight: 700;
+        background-color: rgb(73, 38, 73);
+        margin: -15px 4px 0px;
+        padding: 1px;
+        text-align: justify;
+    }
+    #botoes button:hover {
+        background-color:   #1b0f19;
+        color: #b6c3fa;
+    }
+}
+ 
