@@ -39,6 +39,9 @@ nomeUsuario.addEventListener('click', function (){
    placarC.classList.add('placarAparecer')
    placarEscondido.classList.remove('esconder1')
    placarEscondido.classList.add('placar');
+   start()
+   tempo.classList.remove('esconderTempo');
+   tempo.classList.add('timer')
 })
 
 
@@ -48,11 +51,11 @@ const pontosComputador = document.getElementById('computador');
 botoes.forEach((button) => button.addEventListener('click', function (evt) { 
    jogadorEscolha = evt.target
    jogador = jogadorEscolha.id;
-   console.log(jogadorEscolha);
    computador = opcoes[Math.floor(Math.random() * 3)];
    vencedor();
    placarJ.innerText = usuario + ": " + placarJogador;
    pontosComputador.innerText = " " + placarComputador;
+   inclusaoEscolhas();
 }));
 
 
@@ -95,10 +98,34 @@ function vencedor(){
 
 //Exibindo escolhas do jogador e do computador
 // Nome do usuário - GIF representativo - Nome da escolha;
- 
-function remocaoCardsInclusaoEscolhas(){
-   const cardBox = document.createElement("div");
+ const playerResult = document.getElementsByClassName('esconder')[3];
+ const playerInfo1 = document.getElementsByClassName('player1')[1];
+ const playerInfo2 = document.getElementsByClassName('player2')[0];
+ const tempo = document.getElementsByClassName('esconderTempo')[0];
 
+function inclusaoEscolhas(){
+playerResult.classList.add('player');
+playerInfo1.innerText = computador.toUpperCase();
+playerInfo2.innerText = resultado.toUpperCase();
 }
+
+let seg = 0
+let min = 0
+
+function start(){
+  setInterval(temporizador,1000)
+}
+
+function temporizador(){
+   seg++
+     if(seg === 60){
+       min++
+       seg=0
+     }
+     if(min === 1){
+       min=0
+     }
+     document.getElementById('tempo').innerText = 0 + ":" + seg;
+   }
 
 
