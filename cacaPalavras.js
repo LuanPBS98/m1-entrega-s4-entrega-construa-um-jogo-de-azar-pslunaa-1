@@ -54,6 +54,10 @@ function adicionarPalavras (str,indice){
         m++
     }
 }
+
+const span = document.getElementById("ajuda")
+span.innerText = palavrasEscondidas.join(" - ")
+
 for(let a = 0; a < palavrasEscondidas.length; a++){
     adicionarPalavras(palavrasEscondidas[a],a);
 }

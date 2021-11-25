@@ -73,8 +73,9 @@ summary{
 }
 .options span{
     color: white;
-    font-size: 14px;
-    background-color: black;   
+    font-size: 18px;
+    font-style: oblique;
+    background-color: black; 
 }
 footer {
     position: absolute;   
@@ -176,7 +177,6 @@ td:hover{
     .options span{
         background-color: transparent;
         color: black;
-        font-weight: 600; 
     }
     .options {
          margin-bottom: 20px; 
