@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="caca-palavras" href="cacaPalavras.css" rel="stylesheet"/>
+
+    <title>Caça-Palavras</title>
+</head>
+<body> 
+
+        <header>
+            <figure class="harryLogo">
+                <img src="assets/background/Ordem-fenix.png">
+                </figure>
+        </header>
+
+        <section class="wordSearch">
+            <main></main>
+            <aside>
+                <details class="options">
+                    <summary >Instrução</summary>
+                    <span>
+                        Olá bruxos e trouxas.
+                        Sejam bem vindos ao caça-palavras Ordem da Fênix, o intuito do jogo é você encontrar os três nomes dos membros 
+                        da Ordem da Fênix que estão escondidos no tabuleiro, confira as regras logo abaixo, e se quiser conhecer um pouco 
+                        a Ordem da Fênix é só conferir as nossas curiosidades.
+                    </span>
+                </details>
+
+                <details class="options">
+                    <summary >Regras</summary>
+                    <span>
+                        1 - Você deve encontrar o nome de 3 bruxos no caça-palavras.
+                        <br>
+                        <br>
+                        2 - Você deve selecionar letra por letra até que todo o nome do bruxo fique verde.
+                        <br>
+                        <br>
+                        3 - Caso precise de ajuda, abra a guia de dificuldade para ver quais nomes precisa encontrar.
+                    </span>
+                </details>
+
+                <details class="options">
+                    <summary >Curiosidades</summary>
+                    <span>
+                        A Ordem da Fênix foi uma organização secreta fundada por Alvo Dumbledore no intuito de se opor a Lord Voldemort 
+                        e a seus Comensais da Morte, protegendo o mundo dos bruxos e dos trouxas(sem magia). A Ordem original foi criada na 
+                        década de 1970. A Ordem se desfez, após sua primeira vitória em 1981, mas foi convocada novamente em 1995, após Harry 
+                        Potter informar Dumbledore sobre o retorno de Lord Voldemort.
+                        Em 2 de maio de 1998, a Ordem se junto com a Armada de Dumbledore e lutaram contra Voldemort e seus Comensais da Morte 
+                        pela uma última vez na Escola de Magia e Bruxaria de Hogwarts. A Batalha de Hogwarts terminou com a morte de Voldemort 
+                        pelas mãos de Harry Potter mais uma vez, sendo uma vitória decisiva para a Ordem e seus aliados.
+                    </span>    
+                </details>
+
+                <details class="options" id="menos">
+                    <summary >Dificuldade? Veja o nome dos bruxos!</summary>
+                    <span id="ajuda">
+        
+                    </span>
+                
+            </aside>
+
+            <footer>
+                <audio preload autoplay controls loop>
+                    <source src="assets/audio/John_Williams_Hedwigs_Theme_From_Harry_Potter_ringtone_(Fringster.com).mp3" type="audio/mpeg">
+                    <source src="assets/audio/John_Williams_Hedwigs_Theme_From_Harry_Potter_ringtone_(Fringstercom).ogg" type="audio/ogg">
+                    <p>Se o audio não tocar,é porque seu navegador nao suporta o html 5</p>
+                </audio>
+            </footer>
+
+            <div id="backPopup">
+                <div class="alert-box">
+                    <h1>Parabéns</h1>
+                    <p>Você encontrou os membros da ORDEM!</p>
+                    <input type="button" value="JOGAR NOVAMENTE" onclick="fecharPopup()"/>
+                </div>
+            </div>
+            <script src="cacaPalavras.js"></script>
+        </section>
+    
+</body>
+</html>
