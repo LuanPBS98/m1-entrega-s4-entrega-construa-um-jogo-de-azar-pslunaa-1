@@ -63,6 +63,9 @@ function nomeDosBruxos(e){
     celulaClicada.classList.toggle("nomesBruxos")
 }
 
+const span = document.getElementById("ajuda")
+span.innerText = palavrasEscondidas.join(" - ")
+
 let msg_alerta = document.querySelector("#backPopup")
 // Criação do tabuleiro
 const containerTabuleiro = document.getElementsByTagName("main")[0];
