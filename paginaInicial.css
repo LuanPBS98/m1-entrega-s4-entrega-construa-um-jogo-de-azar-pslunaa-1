@@ -4,10 +4,7 @@ body{
      align-items: center;
      flex-direction: column;
      justify-content: center;
-<<<<<<< HEAD
      text-align: center;
-=======
->>>>>>> 526b703eeb9b11eefbd4f142b71ce1306a8e1398
 }
 
 p{
@@ -18,23 +15,14 @@ p{
     border-radius: 15px;
     text-align: center;
 }
-<<<<<<< HEAD
 header img{
     width: 260px;   
 }
-=======
->>>>>>> 526b703eeb9b11eefbd4f142b71ce1306a8e1398
 
 h2{
     color: #fff;
 }
 
-<<<<<<< HEAD
-=======
-h1{
-color: #fff;
-}
->>>>>>> 526b703eeb9b11eefbd4f142b71ce1306a8e1398
 
 img[alt="logoHp"]{
     width: 200px;
@@ -48,11 +36,7 @@ img[alt="logoHh"]{
 #game1{
     padding: 20px;
     text-transform: uppercase;
-<<<<<<< HEAD
     font-size: 23px;
-=======
-    font-size: 30px;
->>>>>>> 526b703eeb9b11eefbd4f142b71ce1306a8e1398
     color: black;
     text-decoration: none;
 }
@@ -63,11 +47,7 @@ img[alt="logoHh"]{
 
 #game2{
     padding: 50px;
-<<<<<<< HEAD
     font-size: 23px;
-=======
-    font-size: 30px;
->>>>>>> 526b703eeb9b11eefbd4f142b71ce1306a8e1398
     text-transform: uppercase;
     color: black;
     text-decoration: none;
@@ -79,10 +59,7 @@ img[alt="logoHh"]{
 
 div{
     display: flex;
-<<<<<<< HEAD
     flex-direction: column;
-=======
->>>>>>> 526b703eeb9b11eefbd4f142b71ce1306a8e1398
     justify-content: center;
     align-items: center;
 }
@@ -99,7 +76,6 @@ div{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-<<<<<<< HEAD
 }
 @media screen and (min-width: 600px){
     header img{
@@ -111,11 +87,10 @@ div{
     }
     #game1{
         font-size: 30px;
+        font-weight: bold;
     }
     #game2{
         font-size: 30px;
+        font-weight: bold;
     }
 }
-=======
-}
->>>>>>> 526b703eeb9b11eefbd4f142b71ce1306a8e1398
