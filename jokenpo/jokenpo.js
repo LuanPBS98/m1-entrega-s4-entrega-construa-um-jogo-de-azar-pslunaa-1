@@ -112,17 +112,38 @@ let min = 0
 function start(){
   setInterval(temporizador,1000)
 }
-
+const popUp = document.querySelector("#backPopupJ")
 function temporizador(){
    seg++
-     if(seg === 60){
+     if(seg === 5){
        min++
        seg=0
+      
+      const alert = document.querySelector(".alert-boxJ")
+      const p = document.querySelector(".resultado")
+      if(Number(placarJogador) > Number(placarComputador)){
+         alert.style.backgroundImage = "url('./assets/Img - Jokenpo/hunter-x-hunter-smile(vitoria do jogador).gif')"
+         alert.style.color = "white"
+         p.innerText = `${usuario} você é mais forte e por isso venceu!`
+      } else if (Number(placarJogador) < Number(placarComputador)){
+         p.innerText = `O computador é superior a você ${usuario} e por isso venceu!`
+         alert.style.backgroundImage = "url('./assets/Img - Jokenpo/hisoka-hunter-x-hunter(vitoria do computador).gif')"
+      } else {
+         p.innerText = `${usuario} seu poder é igual ao do computador, vocês empataram.`
+      }
+       popUp.style.display = "block"
      }
      if(min === 1){
        min=0
      }
      document.getElementById('tempo').innerText = 0 + ":" + seg;
    }
+
+   function fecharPopupJ(){
+      popUp.style.display = "none"
+      document.location.reload(true)
+   }
+  
+  
 
 
