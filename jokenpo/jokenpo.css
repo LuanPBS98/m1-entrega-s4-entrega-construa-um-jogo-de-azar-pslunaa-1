@@ -105,7 +105,17 @@ header img {
 .esconder {
     display: none;
 }
-
+.container-1{
+    display: flex;
+    flex-direction: row;
+}
+.nome-jogador label{
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 700;
+    background-color: rgb(73, 38, 73);
+    margin-bottom: 15px;
+}
 
 .nome-jogador{
     width: 293px;
@@ -142,6 +152,41 @@ header img {
     border-radius: 10px;
 }
 
+.informacoes{
+    width: 293px;
+    height: 180px;
+    margin-left: 70px;
+    margin-top: 50px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-shadow: -1px 11px 5px 31px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 11px 5px 31px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 11px 5px 31px rgba(0,0,0,0.75);
+}
+.informacoes summary{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: rgb(73, 38, 73);
+    margin: 0 4px;
+}
+.informacoes p{
+    font-size: 13px;
+    font-weight: 700;
+    background-color: rgb(73, 38, 73);
+    margin: 0 4px 15px;
+    padding: 1px;
+}
+.informacoes ul{
+    font-size: 13px;
+    font-weight: 700;
+    background-color: rgb(73, 38, 73);
+    margin: -15px 4px 0px;
+    padding: 1px;
+}
 .player{
     display: flex;
     flex-direction: column;
@@ -152,7 +197,6 @@ header img {
     justify-content: center;
     color: #fff;
 }
-
 .player1{
     margin-bottom: 20px;
 }

@@ -11,6 +11,7 @@ const nomeUsuario = document.getElementsByClassName('start')[0];
 const user = document.getElementById('User');
 
 const boxUser = document.getElementsByClassName('nome-jogador')[0];
+const boxInfo = document.getElementsByClassName('informacoes')[0];
 const escolhaPedra = document.getElementsByClassName('cardEscolha')[0];
 const escolhaPapel = document.getElementsByClassName('cardEscolha')[1];
 const escolhaTesoura = document.getElementsByClassName('cardEscolha')[2];
@@ -28,6 +29,8 @@ nomeUsuario.addEventListener('click', function (){
    placarJ.innerText = user.value + ": ";
    boxUser.classList.remove('nome-jogador')
    boxUser.classList.add('esconder')
+   boxInfo.classList.remove('informacoes')
+   boxInfo.classList.add('esconder')
    aparecer.classList.remove('esconder')
    aparecer.classList.add('aparecer')
    placarJ.classList.remove('esconder')
