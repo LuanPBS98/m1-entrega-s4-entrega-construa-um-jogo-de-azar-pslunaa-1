@@ -1,11 +1,71 @@
+body{
+    background-image: url("assets/Img - Jokenpo/224-2245659_hunter-x-hunter-wallpaper-4k.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat, repeat;
+}
+
+header {
+    display: flex;
+}
+
+header h3{
+    color: #fff;
+
+}
+
+
+header img {
+    width: 25%;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.escolha{
+    color: #fff;
+    margin-top: 60px;
+    background-color: rgb(73, 38, 73);
+    width: 909px;
+    text-align: center;
+}
+
+.placarJ{
+    margin-right: 100px;
+}
+
+.placar {
+    display: flex;
+    background-color: rgb(77, 31, 119);
+    width: 400px;
+    height: 50px;
+    margin-top: 75px;
+    margin-left: 150px;
+    justify-content: center;
+}
+
+.placarAparecer {
+    animation: opacidade 3s;
+    color: #fff;
+    height: 50px;
+    display: flex;
+    margin-right: 40px;
+    margin-left: 35px;
+    align-items: center;
+    font-size: 22px;
+}
+
 .cardEscolha {
     width: 293px;
     display: flex;
     flex-direction: column;
     margin-right: 15px;
-    border: solid 1px green;
+    border: solid 1px;
     background-color: black;
     border-radius: 5px;
+}
+
+.aparecer{
+    margin-left: 180px;
+    animation: opacidade 3s;
 }
 
 #botoes {
@@ -17,4 +77,90 @@
     border: none;
     border-radius: 5px;
     text-transform: uppercase;
+}
+
+#botoes button:hover {
+    background-color: green;
+    color: #fff;
+    font-weight: 800;
+}
+
+.esconder {
+    display: none;
+}
+
+
+.nome-jogador{
+    width: 293px;
+    height: 180px;
+    margin-left: 50px;
+    margin-top: 50px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -1px 11px 5px 31px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 11px 5px 31px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 11px 5px 31px rgba(0,0,0,0.75);
+}
+
+.nome-jogador input[type="text"]{
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+}
+
+.nome-jogador label{
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 700;
+    background-color: rgb(73, 38, 73);
+    margin-bottom: 15px;
+}
+
+.start{
+    margin-top: 20px;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+
+
+
+@keyframes opacidade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    from{
+        margin-left: 0%;
+    }
+    to{
+        margin-left: 50%;
+    }
+}
+
+@keyframes slideRight {
+    from{
+        margin-right: 0%;
+    }
+    to{
+        margin-right: 100%;
+    }
+}
+
+@keyframes slideBottom {
+    from{
+        margin-bottom: 0%;
+    }
+    to{
+        margin-bottom: 100%;
+    }
+    
 }
